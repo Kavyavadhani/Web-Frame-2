@@ -1,0 +1,12 @@
+<h1>Fetch Random Image</h1>
+<button onclick="fetchRandomImage()">Fetch Random Image</button>
+{{#if file}}
+<div id="image-container">
+  <img src="/uploads/{{file}}" style="width:200px; margin:10px;">
+</div>
+{{/if}}
+<script>
+  function fetchRandomImage() {
+    window.location.href = '/fetch-single';
+  }
+</script>
